@@ -13,14 +13,15 @@ const Navbar = () => {
   const [activeIdx, setActiveIdx] = useState(-1);
 
   return (
-    <header className="bg-cyan-300 h-16 min-w-full fixed">
-      <nav className="flex min-h-full flex-row items-center">
-        <Link href={"/"} className="text-3xl">
-          <h1>Nicholas Angelopoulos</h1>
+    <header className="fixed h-16 min-w-full bg-cyan-300">
+      <nav className="flex min-h-full flex-row items-center ">
+        <Link href={"/"} className=" min-h-full text-3xl">
+          <h1 className="min-h-full text-3xl">Nicholas Angelopoulos</h1>
         </Link>
-        <div className="flex min-h-full flex-row px-4">
+        <div className="flex  h-full flex-row px-4">
           {MENU_LIST.map((menu, idx) => (
-            <div className="min-h-full "
+            <div
+              className="min-h-full "
               onClick={() => {
                 setActiveIdx(idx);
                 setNavActive(false);
