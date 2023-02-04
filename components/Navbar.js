@@ -13,22 +13,14 @@ const Navbar = () => {
   const [activeIdx, setActiveIdx] = useState(-1);
 
   return (
-    <header>
-      <nav className={`nav`}>
-        <Link href={"/"}>
-          <h1 className="logo">Nicholas Angelopoulos</h1>
+    <header className="bg-cyan-300 h-16 min-w-full fixed">
+      <nav className="flex min-h-full flex-row items-center">
+        <Link href={"/"} className="text-3xl">
+          <h1>Nicholas Angelopoulos</h1>
         </Link>
-        <div
-          onClick={() => setNavActive(!navActive)}
-          className={`nav__menu-bar`}
-        >
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div className={`${navActive ? "active" : ""} nav__menu-list`}>
+        <div className="flex min-h-full flex-row px-4">
           {MENU_LIST.map((menu, idx) => (
-            <div
+            <div className="min-h-full "
               onClick={() => {
                 setActiveIdx(idx);
                 setNavActive(false);
@@ -45,3 +37,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+// px-2 py-3.5
