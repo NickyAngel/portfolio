@@ -1,10 +1,7 @@
 import Link from "next/link";
-const NavItem = ({ text, href, active }) => {
+const NavItem = ({ text, href }) => {
   return (
-    <Link
-      href={href}
-      className=" px-3 text-red-400 hover:bg-cyan-700 "
-    >
+    <Link href={href} className="px-3 text-red-400 ">
       {text}
     </Link>
   );
