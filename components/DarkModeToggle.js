@@ -18,9 +18,9 @@ export default function DarkModeToggle({ themeVal, setTheme }) {
   useEffect(handleClick, []);
 
   return (
-    <div className="rounded-md bg-red-300 p-1.5" onClick={handleClick}>
+    <div className="rounded-md bg-red-300 p-1.5 " onClick={handleClick}>
       {mode === "dark" ? (
-        <IconContext.Provider value={{ color: "white", size: "2rem" }}>
+        <IconContext.Provider value={{ color: "black", size: "2rem" }}>
           <BsFillSunFill />
         </IconContext.Provider>
       ) : (

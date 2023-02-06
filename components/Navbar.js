@@ -11,9 +11,12 @@ const MENU_LIST = [
 const Navbar = ({ themeVal, setTheme }) => {
   return (
     <header className="fixed flex h-16 min-w-full flex-row items-center  bg-cyan-300">
-      <nav className="flex min-h-full min-w-full flex-row items-end justify-between px-3">
+      <nav className="flex min-h-full min-w-full flex-row  justify-between px-3">
         <div className="flex min-h-full items-end">
-          <Link href={"/"} className=" flex min-h-full items-end pb-1 text-3xl">
+          <Link
+            href={"/"}
+            className=" flex min-h-full items-end pb-1 text-3xl dark:text-white"
+          >
             <h1 className="min-h-full text-3xl">Nicholas Angelopoulos</h1>
           </Link>
           <div className="flex min-h-full flex-row px-4 ">
@@ -27,7 +30,7 @@ const Navbar = ({ themeVal, setTheme }) => {
             ))}
           </div>
         </div>
-        <div className="py-3 px-0.5">
+        <div className="flex min-h-full items-center px-0.5 hover:cursor-pointer">
           <DarkModeToggle themeVal={themeVal} setTheme={setTheme} />
         </div>
       </nav>
