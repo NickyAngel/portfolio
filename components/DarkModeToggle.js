@@ -1,21 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IconContext } from "react-icons";
 import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 
 export default function DarkModeToggle({ themeVal, setTheme }) {
-  let theme = "light";
-  const [mode, setMode] = useState(theme);
+  const [mode, setMode] = useState(themeVal);
 
   let handleClick = () => {
-    theme = localStorage.getItem("theme");
-    if (theme) {
-      localStorage.setItem("theme", theme === "dark" ? "light" : "dark");
+    themeVal = localStorage.getItem("theme");
+    if (themeVal) {
+      localStorage.setItem("theme", themeVal === "dark" ? "light" : "dark");
     } else {
       localStorage.setItem("theme", "dark");
     }
-    setTheme(theme === "dark" ? "light" : "dark");
-    setMode(theme === "dark" ? "light" : "dark");
+    setTheme(themeVal === "dark" ? "light" : "dark");
+    setMode(themeVal === "dark" ? "light" : "dark");
   };
+  useEffect(handleClick, []);
 
   return (
     <div className="rounded-md bg-red-300 p-1.5" onClick={handleClick}>
