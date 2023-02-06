@@ -4,9 +4,9 @@ import DarkModeToggle from "./DarkModeToggle";
 import NavItem from "./NavItem";
 
 const MENU_LIST = [
-  { text: "Home", href: "/" },
-  { text: "About Me", href: "/about" },
-  { text: "VibeCheck Demo", href: "/vibecheck" },
+  { text: "Home", href: "/#home" },
+  { text: "About Me", href: "/#about" },
+  { text: "VibeCheck Demo", href: "/#vibecheck" },
 ];
 const Navbar = ({ themeVal, setTheme }) => {
   return (

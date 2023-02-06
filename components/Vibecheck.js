@@ -1,6 +1,6 @@
 import { FiGithub } from "react-icons/fi";
 
-export default function About() {
+export default function Vibe() {
   return (
     <div className="dark:text-gray-500">
       <div className="mx-[15%] flex flex-col pt-3">
@@ -14,7 +14,7 @@ export default function About() {
           </div>
           <div className="">
             <iframe
-              class="aspect-video w-full rounded-3xl"
+              className="aspect-video w-full rounded-3xl"
               src="https://www.youtube.com/embed/ZkAHRSJC-rw"
               title="YouTube video player"
               frameborder="0"
