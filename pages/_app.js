@@ -26,8 +26,9 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Navbar themeVal={themeVal} setTheme={setTheme} />
-      <div className="pt-16"></div>
-      <Component {...pageProps} className="pt-16" />
+      <div className="bg-white pt-16 dark:bg-gray-900 min-h-screen">
+        <Component {...pageProps} />
+      </div>
     </>
   );
 }

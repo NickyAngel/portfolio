@@ -8,6 +8,5 @@
   html,
   body {
     @apply h-full;
-    @apply bg-slate-600;
   }
 }
