@@ -8,7 +8,7 @@ const MENU_LIST = [
   { text: "About Me", href: "/about" },
   { text: "VibeCheck Demo", href: "/vibecheck" },
 ];
-const Navbar = () => {
+const Navbar = ({ themeVal, setTheme }) => {
   return (
     <header className="fixed flex h-16 min-w-full flex-row items-center  bg-cyan-300">
       <nav className="flex min-h-full min-w-full flex-row items-end justify-between px-3">
@@ -27,8 +27,8 @@ const Navbar = () => {
             ))}
           </div>
         </div>
-        <div className="py-5 px-1">
-          <DarkModeToggle />
+        <div className="py-3 px-0.5">
+          <DarkModeToggle themeVal={themeVal} setTheme={setTheme} />
         </div>
       </nav>
     </header>
