@@ -13,14 +13,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div id="home" className="min-h-screen pt-16">
-        <HomePage />
-      </div>
-      <div id="about" className="min-h-screen pt-16">
-        <About />
-      </div>
-      <div id="vibecheck" className="min-h-screen pt-16">
-        <Vibe />
+      <div className="md:mx-[20%] dark:text-gray-500">
+        <div id="home" className="min-h-screen pt-16">
+          <HomePage />
+        </div>
+        <div id="about" className="min-h-screen pt-16">
+          <About />
+        </div>
+        <div id="vibecheck" className="min-h-screen pt-16">
+          <Vibe />
+        </div>
       </div>
     </>
   );
