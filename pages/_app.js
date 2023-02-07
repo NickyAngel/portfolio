@@ -3,7 +3,7 @@ import "@/styles/globals.css";
 import React, { useEffect, useState } from "react";
 
 export default function App({ Component, pageProps }) {
-  const [themeVal, setTheme] = useState("light");
+  const [themeVal, setTheme] = useState("dark");
 
   useEffect(() => {
     themeCheck();

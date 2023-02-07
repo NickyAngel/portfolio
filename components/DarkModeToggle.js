@@ -15,7 +15,11 @@ export default function DarkModeToggle({ themeVal, setTheme }) {
     setTheme(themeVal === "dark" ? "light" : "dark");
     setMode(themeVal === "dark" ? "light" : "dark");
   };
-  useEffect(handleClick, []);
+  useEffect(() => {
+    console.log(localStorage.theme);
+    if (localStorage.theme === undefined) localStorage.setItem("theme", "dark");
+    setMode(localStorage.theme);
+  }, []);
 
   return (
     <div className="rounded-md bg-red-300 p-1.5 " onClick={handleClick}>
