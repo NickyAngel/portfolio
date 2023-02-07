@@ -17,9 +17,8 @@ export default function Vibe() {
               className="aspect-video w-full rounded-3xl"
               src="https://www.youtube.com/embed/ZkAHRSJC-rw"
               title="YouTube video player"
-              frameborder="0"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
           <div className="flex flex-row justify-around py-2">
