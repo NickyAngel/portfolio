@@ -2,6 +2,11 @@ import { About, Vibe, HomePage } from "../components";
 import Head from "next/head";
 
 export default function Home() {
+  const DIVLIST = [
+    { component: <HomePage />, id: "home" },
+    { component: <About />, id: "about" },
+    { component: <Vibe />, id: "vibecheck" },
+  ];
   return (
     <>
       <Head>
@@ -13,16 +18,21 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="md:mx-[20%] dark:text-gray-500">
-        <div id="home" className="min-h-screen pt-16">
-          <HomePage />
-        </div>
-        <div id="about" className="min-h-screen pt-16">
-          <About />
-        </div>
-        <div id="vibecheck" className="min-h-screen pt-16">
-          <Vibe />
-        </div>
+      <div className="dark:text-gray-500 md:mx-[20%]">
+        {DIVLIST.map((obj) => {
+          return (
+            <div
+              id={obj.id}
+              className={
+                obj.id === "vibecheck"
+                  ? " py-16"
+                  : " border-b-2 border-b-gray-400 py-16"
+              }
+            >
+              {obj.component}
+            </div>
+          );
+        })}
       </div>
     </>
   );
