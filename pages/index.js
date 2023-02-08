@@ -18,7 +18,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="dark:text-gray-500 md:mx-[20%]">
+      <div className="dark:text-gray-500 md:mx-[15%]">
         {DIVLIST.map((obj) => {
           return (
             <div
