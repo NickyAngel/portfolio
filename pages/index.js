@@ -25,8 +25,8 @@ export default function Home() {
               id={obj.id}
               className={
                 obj.id === "vibecheck"
-                  ? " py-16"
-                  : " border-b-2 border-b-gray-400 py-16"
+                  ? "pt-16 pb-10"
+                  : "min-h-[80vh] border-b-2 border-b-gray-400 py-16"
               }
             >
               {obj.component}
