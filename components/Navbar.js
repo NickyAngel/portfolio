@@ -7,6 +7,7 @@ const MENU_LIST = [
   { text: "Home", href: "/#home" },
   { text: "About Me", href: "/#about" },
   { text: "VibeCheck Demo", href: "/#vibecheck" },
+  { text: "Contact Me", href: "/#contact"}
 ];
 const Navbar = ({ themeVal, setTheme }) => {
   return (

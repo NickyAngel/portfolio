@@ -4,6 +4,7 @@ import HomePage from "./HomePage";
 import NavItem from "./NavItem";
 import Navbar from "./Navbar";
 import DarkModeToggle from "./DarkModeToggle";
+import Contact from "./Contact";
 module.exports = {
   About,
   Vibe,
@@ -11,4 +12,5 @@ module.exports = {
   NavItem,
   Navbar,
   DarkModeToggle,
+  Contact,
 };

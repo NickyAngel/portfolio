@@ -1,4 +1,4 @@
-import { About, Vibe, HomePage } from "../components";
+import { About, Vibe, HomePage, Contact } from "../components";
 import Head from "next/head";
 
 export default function Home() {
@@ -6,6 +6,7 @@ export default function Home() {
     { component: <HomePage />, id: "home" },
     { component: <About />, id: "about" },
     { component: <Vibe />, id: "vibecheck" },
+    { component: <Contact />, id: "contact" }
   ];
   return (
     <>
@@ -24,7 +25,7 @@ export default function Home() {
             <div
               id={obj.id}
               className={
-                obj.id === "vibecheck"
+                obj.id === "contact"
                   ? "pt-16 pb-10"
                   : "min-h-[80vh] border-b-2 border-b-gray-400 py-16"
               }
