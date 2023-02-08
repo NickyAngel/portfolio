@@ -24,12 +24,13 @@ const Navbar = ({ themeVal, setTheme }) => {
           </Link>
           <div className="flex min-h-full flex-row px-4 ">
             {MENU_LIST.map((menu) => (
-              <div
+              <a
+                href={menu.href}
                 className="flex h-16 items-end pb-2 hover:cursor-pointer hover:bg-sky-600 "
                 key={menu.text}
               >
                 <NavItem {...menu} />
-              </div>
+              </a>
             ))}
             <a
               href="/resume.pdf"
