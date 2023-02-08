@@ -10,19 +10,21 @@ const MENU_LIST = [
 ];
 const Navbar = ({ themeVal, setTheme }) => {
   return (
-    <header className="fixed flex h-16 min-w-full flex-row items-center  bg-cyan-300">
-      <nav className="flex min-h-full min-w-full flex-row  justify-between px-3">
+    <header className="fixed flex h-16 min-w-full flex-row items-center  bg-sky-500 dark:bg-gray-800">
+      <nav className="flex min-h-full min-w-full flex-row justify-between px-3">
         <div className="flex min-h-full items-end">
           <Link
             href={"/"}
-            className=" flex min-h-full items-end pb-1 text-3xl dark:text-white"
+            className=" flex min-h-full items-end pb-2 text-3xl dark:text-gray-700"
           >
-            <h1 className="min-h-full text-3xl">Nicholas Angelopoulos</h1>
+            <h1 className="min-h-full text-3xl dark:text-sky-600">
+              Nicholas Angelopoulos
+            </h1>
           </Link>
           <div className="flex min-h-full flex-row px-4 ">
             {MENU_LIST.map((menu) => (
               <div
-                className="flex h-16 items-end pb-1 hover:cursor-pointer hover:bg-cyan-700 "
+                className="flex h-16 items-end pb-2 hover:cursor-pointer hover:bg-sky-600 "
                 key={menu.text}
               >
                 <NavItem {...menu} />

@@ -22,7 +22,10 @@ export default function DarkModeToggle({ themeVal, setTheme }) {
   }, []);
 
   return (
-    <div className="rounded-md bg-red-300 p-1.5 " onClick={handleClick}>
+    <div
+      className="rounded-md bg-gray-800 p-1.5 hover:bg-gray-400 dark:bg-gray-600 dark:hover:bg-gray-400 "
+      onClick={handleClick}
+    >
       {mode === "dark" ? (
         <IconContext.Provider value={{ color: "black", size: "2rem" }}>
           <BsFillSunFill />
