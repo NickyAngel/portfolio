@@ -29,6 +29,7 @@ export default function Home() {
                   ? "pt-16 pb-10"
                   : "min-h-[80vh] border-b-2 border-b-gray-400 py-16"
               }
+              key={obj.id}
             >
               {obj.component}
             </div>

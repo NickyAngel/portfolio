@@ -9,10 +9,6 @@ export default function App({ Component, pageProps }) {
     themeCheck();
   }, [themeVal]);
 
-  useEffect(() => {
-    themeCheck();
-  }, []);
-
   const themeCheck = () => {
     if (localStorage.theme === "dark") {
       document.documentElement.classList.add("dark");

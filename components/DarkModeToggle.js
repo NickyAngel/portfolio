@@ -7,16 +7,11 @@ export default function DarkModeToggle({ themeVal, setTheme }) {
 
   let handleClick = () => {
     themeVal = localStorage.getItem("theme");
-    if (themeVal) {
-      localStorage.setItem("theme", themeVal === "dark" ? "light" : "dark");
-    } else {
-      localStorage.setItem("theme", "dark");
-    }
+    localStorage.setItem("theme", themeVal === "dark" ? "light" : "dark");
     setTheme(themeVal === "dark" ? "light" : "dark");
     setMode(themeVal === "dark" ? "light" : "dark");
   };
   useEffect(() => {
-    console.log(localStorage.theme);
     if (localStorage.theme === undefined) localStorage.setItem("theme", "dark");
     setMode(localStorage.theme);
   }, []);
