@@ -6,7 +6,7 @@ export default function Home() {
     { component: <HomePage />, id: "home" },
     { component: <About />, id: "about" },
     { component: <Vibe />, id: "vibecheck" },
-    { component: <Contact />, id: "contact" }
+    { component: <Contact />, id: "contact" },
   ];
   return (
     <>
@@ -19,7 +19,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="dark:text-gray-500 md:text-lg md:mx-[15%]">
+      <div className="dark:text-gray-500 md:mx-[10%] md:text-lg">
         {DIVLIST.map((obj) => {
           return (
             <div
@@ -27,7 +27,7 @@ export default function Home() {
               className={
                 obj.id === "contact"
                   ? "pt-16 pb-10"
-                  : "min-h-[80vh] md:border-b-2 border-b-gray-400 py-16"
+                  : "min-h-[80vh] border-b-gray-400 py-16 md:border-b-2"
               }
               key={obj.id}
             >
