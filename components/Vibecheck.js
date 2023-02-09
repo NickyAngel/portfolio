@@ -3,11 +3,11 @@ import { FiGithub } from "react-icons/fi";
 export default function Vibe() {
   return (
     <div className="">
-      <div className=" ml-10 flex flex-col pt-3">
+      <div className=" mx-5  md:ml-10 flex flex-col pt-3">
         <h1 className="text-4xl">vibe check</h1>
         <h2 className="text-2xl">a micro journaling app</h2>
       </div>
-      <div className="flex ml-10 pt-5">
+      <div className="flex mx-5 md:ml-10 pt-5">
         <div className="min-w-full">
           <div>
             <h3 className="text-xl">check out the video demo here!</h3>
