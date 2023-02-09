@@ -11,7 +11,7 @@ const MENU_LIST = [
 ];
 const Navbar = ({ themeVal, setTheme }) => {
   return (
-    <header className="fixed flex h-16 min-w-full flex-row items-center  bg-sky-500 dark:bg-gray-800">
+    <header className=" fixed z-10 flex h-16 min-w-full flex-row items-center  bg-sky-500 dark:bg-gray-800">
       <nav className="flex min-h-full min-w-full flex-row justify-between px-3">
         <div className="flex min-h-full items-end">
           <Link
