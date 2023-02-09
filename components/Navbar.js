@@ -16,12 +16,12 @@ const Navbar = ({ themeVal, setTheme }) => {
         <div className="flex min-h-full items-end">
           <Link
             href={"/"}
-            className=" flex min-h-full items-end pb-2 text-3xl dark:text-gray-700"
+            className=" flex min-h-full items-end pb-2 dark:text-gray-700"
           >
-            <h1 className="hidden min-h-full text-3xl dark:text-sky-600 md:flex">
+            <h1 className="hidden min-h-full lg:text-3xl dark:text-sky-600 lg:flex">
               Nicholas Angelopoulos
             </h1>
-            <h1 className="pt-1 text-3xl dark:text-sky-600 md:hidden">
+            <h1 className="pt-1 text-3xl dark:text-sky-600 lg:hidden">
               Nicky Angel
             </h1>
           </Link>
@@ -38,7 +38,7 @@ const Navbar = ({ themeVal, setTheme }) => {
             <a
               href="/resume.pdf"
               target="_blank"
-              className="ml-1 mt-[1.8rem] mb-1.5 rounded-full border-2 border-gray-800 bg-sky-300 px-2 text-sky-800 hover:cursor-pointer hover:bg-sky-600 dark:border-gray-600 dark:bg-sky-50/0 dark:text-sky-700 dark:hover:bg-gray-400"
+              className="mt-8 ml-1 lg:mt-[1.8rem] mb-1.5 rounded-full lg:border-2 border-gray-800 bg-sky-300 px-2 text-sky-800 hover:cursor-pointer hover:bg-sky-600 dark:border-gray-600 dark:bg-sky-50/0 dark:text-sky-700 dark:hover:bg-gray-400"
             >
               Resume
             </a>
