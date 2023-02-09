@@ -18,11 +18,14 @@ const Navbar = ({ themeVal, setTheme }) => {
             href={"/"}
             className=" flex min-h-full items-end pb-2 text-3xl dark:text-gray-700"
           >
-            <h1 className="min-h-full text-3xl dark:text-sky-600">
+            <h1 className="hidden min-h-full text-3xl dark:text-sky-600 md:flex">
               Nicholas Angelopoulos
             </h1>
+            <h1 className="pt-1 text-3xl dark:text-sky-600 md:hidden">
+              Nicky Angel
+            </h1>
           </Link>
-          <div className="flex min-h-full flex-row px-4 ">
+          <div className=" hidden min-h-full flex-row px-4 md:flex ">
             {MENU_LIST.map((menu) => (
               <a
                 href={menu.href}
