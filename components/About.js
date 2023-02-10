@@ -1,8 +1,15 @@
 import { AiFillLinkedin } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 import { ImNewspaper } from "react-icons/im";
+import { useEffect, useState } from "react";
 
 export default function About() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const TOOLS = [
     { name: "JavaScript" },
     { name: "Node.js" },
@@ -15,7 +22,7 @@ export default function About() {
     { name: "Google Cloud Vision API" },
     { name: "and many more" },
   ];
-  return (
+  return mounted ? (
     <div className="">
       <div className="">
         <img
@@ -34,11 +41,13 @@ export default function About() {
             Software Engineering bootcamp where I learned full-stack web
             development using the PERN stack. These days I like to code with
             these tools:
-            <div className="flex h-32 flex-col flex-wrap md:h-40">
+            <span className="flex h-32 flex-col flex-wrap md:h-40">
               {TOOLS.map((tool) => (
-                <li className="flex-auto pr-1">{tool.name}</li>
+                <li key={tool.name} className="flex-auto pr-1">
+                  {tool.name}
+                </li>
               ))}
-            </div>
+            </span>
             <br />
             When I'm not behind the keyboard coding away I like to play board
             games, volleyball, racquetball, Dungeons and Dragons, and
@@ -47,7 +56,7 @@ export default function About() {
             customers.
           </p>
         </div>
-        <div className=" flex flex-row py-2 text-xs justify-around md:text-lg">
+        <div className=" flex flex-row justify-around py-2 text-xs md:text-lg">
           <a
             className="mx-2 rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30 lg:mx-0"
             href="https://www.linkedin.com/in/nickyangel/"
@@ -56,11 +65,11 @@ export default function About() {
             Connect on LinkedIn <AiFillLinkedin className="mb-1 inline" />
           </a>
           <a
-            className="hidden rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30 lg:mx-0 md:inline"
+            className="hidden rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30 md:inline lg:mx-0"
             href="https://github.com/NickyAngel"
             target="_blank"
           >
-            Explore my Github <FiGithub className="mt-1 md:-mt-2 inline" />
+            Explore my Github <FiGithub className="mt-1 inline md:-mt-2" />
           </a>
           <a
             className="mx-2 rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30 lg:mx-0"
@@ -72,5 +81,7 @@ export default function About() {
         </div>
       </div>
     </div>
+  ) : (
+    <div />
   );
 }
