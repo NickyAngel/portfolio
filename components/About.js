@@ -47,7 +47,7 @@ export default function About() {
             customers.
           </p>
         </div>
-        <div className=" flex flex-row py-2 text-xs md:justify-around md:text-lg">
+        <div className=" flex flex-row py-2 text-xs justify-around md:text-lg">
           <a
             className="mx-2 rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30 md:mx-0"
             href="https://www.linkedin.com/in/nickyangel/"

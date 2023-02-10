@@ -30,14 +30,14 @@ export default function Vibe() {
           </div>
           <div className="flex flex-row justify-around py-2 text-xs md:text-lg">
             <a
-              className="rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30"
+              className="mx-2 rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30"
               href="https://vibe-check.onrender.com/"
               target="_blank"
             >
               Check out vibe check &#10004;
             </a>
             <a
-              className="rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30"
+              className="mx-2 rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30"
               href="https://github.com/2206-fsa-best-team/VibeCheck"
               target="_blank"
             >
