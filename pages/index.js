@@ -31,7 +31,7 @@ export default function Home() {
               }
               key={obj.id}
             >
-              {obj.component}
+              <div className="mx-10">{obj.component} </div>
             </div>
           );
         })}
