@@ -56,11 +56,11 @@ export default function About() {
             Connect on LinkedIn <AiFillLinkedin className="mb-1 inline" />
           </a>
           <a
-            className="hidden rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30 lg:mx-0 md:flex"
+            className="hidden rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30 lg:mx-0 md:inline"
             href="https://github.com/NickyAngel"
             target="_blank"
           >
-            Explore my Github <FiGithub className="mt-1" />
+            Explore my Github <FiGithub className="mt-1 md:-mt-2 inline" />
           </a>
           <a
             className="mx-2 rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30 lg:mx-0"
