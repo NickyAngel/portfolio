@@ -1,6 +1,6 @@
 export default function HomePage() {
   return (
-    <div className="justify ml-10 flex pt-40">
+    <div className="justify flex pt-40">
       <div className="">
         <p className="mb-2">Hey there, you can call me:</p>
         <h1 className="text-5xl dark:text-sky-300">Nicholas Angelopoulos,</h1>
