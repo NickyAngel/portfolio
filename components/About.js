@@ -49,21 +49,21 @@ export default function About() {
         </div>
         <div className=" flex flex-row py-2 text-xs justify-around md:text-lg">
           <a
-            className="mx-2 rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30 md:mx-0"
+            className="mx-2 rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30 lg:mx-0"
             href="https://www.linkedin.com/in/nickyangel/"
             target="_blank"
           >
             Connect on LinkedIn <AiFillLinkedin className="mb-1 inline" />
           </a>
           <a
-            className="hidden rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30 md:flex"
+            className="hidden rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30 lg:mx-0 md:flex"
             href="https://github.com/NickyAngel"
             target="_blank"
           >
             Explore my Github <FiGithub className="mt-1" />
           </a>
           <a
-            className="mx-2 rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30 md:mx-0"
+            className="mx-2 rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30 lg:mx-0"
             href="/resume.pdf"
             target="_blank"
           >
