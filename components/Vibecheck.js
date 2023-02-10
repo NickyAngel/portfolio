@@ -3,14 +3,21 @@ import { FiGithub } from "react-icons/fi";
 export default function Vibe() {
   return (
     <div className="">
-      <div className=" mx-5  flex flex-col pt-3 md:ml-10">
+      <h1 className="z-0 animate-pulse text-5xl dark:text-sky-300">
+        Capstone Project
+      </h1>
+      <div className="flex flex-col pt-3 ">
         <h1 className="text-4xl">vibe check</h1>
         <h2 className="text-2xl">a micro journaling app</h2>
       </div>
-      <div className="mx-5 flex pt-5 md:mx-10">
+      <div className="flex pt-5">
         <div className="min-w-full">
           <div>
-            <h3 className="text-xl">check out the video demo here!</h3>
+            <h3 className="text-xl">
+              During my time at Fullstack Academy my team of 4 created vibe
+              check, a progressive web app made with React and ChakraUI as our
+              capstone project. Check out the video demo here!
+            </h3>
           </div>
           <div className="flex justify-center">
             <iframe
@@ -34,7 +41,7 @@ export default function Vibe() {
               href="https://github.com/2206-fsa-best-team/VibeCheck"
               target="_blank"
             >
-              Check out the Github <FiGithub className="inline" />
+              Check out the Github <FiGithub className=" mb-2 inline" />
             </a>
           </div>
         </div>
