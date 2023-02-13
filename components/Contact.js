@@ -23,6 +23,21 @@ const Contact = () => {
     if (content.length <= 0) {
       isValid = false;
     }
+
+    //return correct error message if any field is empty
+    if (!isValid) {
+      alert("all form fields are required");
+      return isValid;
+    }
+
+    //then check for valid email address
+    const regex = new RegExp(
+      "[a-z0-9!#$%&*+/=?^_'{|}~-]+(?:.[a-z0-9!#$%&*+/=?^_'{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+    );
+    if (email.match(regex) === null) {
+      alert("please enter a valid email address");
+      isValid = false;
+    }
     return isValid;
   };
 
@@ -57,8 +72,6 @@ const Contact = () => {
       }
       alert("Message sent!");
       setButton("Send message!");
-    } else {
-      alert("all form fields are required");
     }
     return;
   };
@@ -130,7 +143,10 @@ const Contact = () => {
           {button === "sending" ? "" : <GiLetterBomb className="mb-1 inline" />}
         </button>
         {errorMsg.length > 0 ? (
-          <div>There was an error sending your email please try again!</div>
+          <div>
+            There was an error sending your email please try again! Error
+            message: {errorMsg}
+          </div>
         ) : (
           ""
         )}
