@@ -20,10 +20,11 @@ const sendEmail = async (req, res) => {
       <body>
         <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';"></div>
         <div class="container" style="margin-left: 20px;margin-right: 20px;">
-          <h3>You've got a new mail from ${req.body.fullname}, their email is: ✉️${req.body.email} </h3>
+          <h3>You've got a new mail from ${req.body.name}, their email is: ✉️${req.body.email} </h3>
           <div style="font-size: 16px;">
             <p>Message:</p>
             <p>${req.body.message}</p>
+            <p>- ${req.body.name}</p>
             <br>
           </div>
         </div>
