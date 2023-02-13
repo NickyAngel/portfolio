@@ -40,6 +40,10 @@ export default function Contact() {
           subject,
           message: content,
         });
+        setName("");
+        setEmail("");
+        setSubject("");
+        setContent("");
       } catch (e) {
         setButton("Send message!");
         setErrorMsg(e.message);
