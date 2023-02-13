@@ -1,8 +1,7 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { GiLetterBomb } from "react-icons/gi";
-import axios from "axios";
 
-export default function Contact() {
+const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -34,12 +33,19 @@ export default function Contact() {
     if (isFormValid) {
       setButton("sending");
       try {
-        const res = await axios.post("/api/sendgrid", {
-          email,
-          name,
-          subject,
-          message: content,
+        const res = await fetch("/api/sendgrid", {
+          body: JSON.stringify({
+            email: email,
+            name: name,
+            subject: subject,
+            message: content,
+          }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+          method: "POST",
         });
+        console.log(res);
         setName("");
         setEmail("");
         setSubject("");
@@ -131,4 +137,6 @@ export default function Contact() {
       </form>
     </div>
   );
-}
+};
+
+export default Contact;
