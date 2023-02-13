@@ -60,7 +60,6 @@ const Contact = () => {
           },
           method: "POST",
         });
-        console.log(res);
         setName("");
         setEmail("");
         setSubject("");
