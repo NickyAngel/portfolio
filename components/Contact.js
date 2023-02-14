@@ -98,7 +98,7 @@ const Contact = () => {
               setName(evt.target.value);
             }}
             name="name"
-            className=""
+            className="w-[70%] rounded-md p-1"
           />
         </div>
         <div className="flex flex-wrap justify-between py-2">
@@ -112,7 +112,7 @@ const Contact = () => {
               setEmail(evt.target.value);
             }}
             name="email"
-            className=""
+            className="w-[70%] rounded-md p-1"
           />
         </div>
         <div className="flex flex-wrap justify-between py-2">
@@ -126,7 +126,7 @@ const Contact = () => {
               setSubject(evt.target.value);
             }}
             name="subject"
-            className=""
+            className="w-[70%] rounded-md p-1"
           />
         </div>
         <div className="flex flex-wrap justify-between py-2">
@@ -140,7 +140,7 @@ const Contact = () => {
               setContent(evt.target.value);
             }}
             name="content"
-            className=""
+            className="w-[70%] rounded-md p-1"
           />
         </div>
         <div className="flex justify-center pt-4">
