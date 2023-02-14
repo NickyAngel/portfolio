@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { GiLetterBomb } from "react-icons/gi";
+import TextareaAutosize from "react-textarea-autosize";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -78,69 +79,83 @@ const Contact = () => {
   return (
     <div>
       <h1 className="z-0 text-5xl dark:text-sky-300">Contact Me!</h1>
-      <p className="flex pt-5">
-        Reach out if you want to work together, you want to say hello, or maybe
-        just for fun!
-        <span className="ml-2 flex text-xs italic text-red-400">
+      <p className="flex flex-wrap pt-5">
+        Use the form below to reach out if you want to work together, you want
+        to say hello, or maybe just for fun!
+        <span className="flex text-xs italic text-red-400">
           all fields are required
         </span>
       </p>
-      <form className="flex flex-wrap pt-5" onSubmit={handleSubmit}>
-        <label htmlFor="name" className="">
-          Your name
-        </label>
-        <input
-          type="text"
-          value={name}
-          onChange={(evt) => {
-            setName(evt.target.value);
-          }}
-          name="name"
-          className=""
-        />
-        <label htmlFor="email" className="">
-          Your email
-        </label>
-        <input
-          type="text"
-          value={email}
-          onChange={(evt) => {
-            setEmail(evt.target.value);
-          }}
-          name="email"
-          className=""
-        />
-        <label htmlFor="subject" className="">
-          Subject
-        </label>
-        <input
-          type="text"
-          value={subject}
-          onChange={(evt) => {
-            setSubject(evt.target.value);
-          }}
-          name="subject"
-          className=""
-        />
-        <label htmlFor="content" className="">
-          Your message
-        </label>
-        <textarea
-          type="text"
-          value={content}
-          onChange={(evt) => {
-            setContent(evt.target.value);
-          }}
-          name="content"
-          className=""
-        />
-        <button
-          type="submit"
-          className="mx-2 rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30"
-        >
-          {button}
-          {button === "sending" ? "" : <GiLetterBomb className="mb-1 inline" />}
-        </button>
+      <form className=" pt-5" onSubmit={handleSubmit}>
+        <div className="flex flex-wrap justify-between py-2">
+          <label htmlFor="name" className="flex justify-between">
+            Your name
+          </label>
+          <input
+            type="text"
+            value={name}
+            onChange={(evt) => {
+              setName(evt.target.value);
+            }}
+            name="name"
+            className=""
+          />
+        </div>
+        <div className="flex flex-wrap justify-between py-2">
+          <label htmlFor="email" className="flex justify-between">
+            Your email
+          </label>
+          <input
+            type="text"
+            value={email}
+            onChange={(evt) => {
+              setEmail(evt.target.value);
+            }}
+            name="email"
+            className=""
+          />
+        </div>
+        <div className="flex flex-wrap justify-between py-2">
+          <label htmlFor="subject" className="flex justify-between">
+            Subject
+          </label>
+          <input
+            type="text"
+            value={subject}
+            onChange={(evt) => {
+              setSubject(evt.target.value);
+            }}
+            name="subject"
+            className=""
+          />
+        </div>
+        <div className="flex flex-wrap justify-between py-2">
+          <label htmlFor="content" className="flex justify-between">
+            Message
+          </label>
+          <TextareaAutosize
+            type="text"
+            value={content}
+            onChange={(evt) => {
+              setContent(evt.target.value);
+            }}
+            name="content"
+            className=""
+          />
+        </div>
+        <div className="flex justify-center pt-4">
+          <button
+            type="submit"
+            className=" rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30"
+          >
+            {button}
+            {button === "sending" ? (
+              ""
+            ) : (
+              <GiLetterBomb className="mb-1 inline" />
+            )}
+          </button>
+        </div>
         {errorMsg.length > 0 ? (
           <div>
             There was an error sending your email please try again! Error
