@@ -41,7 +41,7 @@ export default function Vibe() {
               href="https://github.com/2206-fsa-best-team/VibeCheck"
               target="_blank"
             >
-              Check out the Github <FiGithub className=" mb-2 inline" />
+              Check out the Github <FiGithub className="mb-1 md:mb-2 inline" />
             </a>
           </div>
         </div>
