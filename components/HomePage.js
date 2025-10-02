@@ -11,8 +11,9 @@ export default function HomePage() {
         </h1>
         <br />
         <p className="w-4/5">
-          I'm a software engineer who uses JavaScript to do full-stack web
-          development. Currently I am looking for a new position, and hoping to
+          But most people just call me Nick. I'm a Mechanical Engineering student at CU Boulder as well
+          as a software engineer who uses JavaScript to do full-stack web
+          development. Currently I am looking for an internship, and hoping to
           join a team of enthusiastic people who enjoy coding as much as I do.
         </p>
       </div>
