@@ -74,10 +74,6 @@ export default function About() {
           >
             Explore my Github <FiGithub className="mt-1 inline md:-mt-2" />
           </a>
-          <a
-            className="mx-2 rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30 lg:mx-0"
-            href="/resume.pdf"
-            target="_blank"
         </div>
       </div>
     </div>
