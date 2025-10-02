@@ -12,6 +12,9 @@ export default function About() {
 
   const TOOLS = [
     { name: "JavaScript" },
+    { name: "Python" },
+    { name: "MATLAB" },
+    { name: "Solidworks" },
     { name: "Node.js" },
     { name: "React.js" },
     { name: "Next.js" },
@@ -35,11 +38,11 @@ export default function About() {
           </h1>
           <br />
           <p className="">
-            I'm Nick. I started coding in college, I didn't stick with it then,
-            but I returned to it a few years ago. I started by teaching myself
+            I'm Nick. I started college a decade ago, I didn't stick with it then,
+            but I returned to it recently. Before that, I decided to learn to code. I started by teaching myself
             JavaScript fundamentals. Eventually I joined Fullstack Academy's
             Software Engineering bootcamp where I learned full-stack web
-            development using the PERN stack. These days I like to code with
+            development using the PERN stack. These days I like to code and engineer with
             these tools:
             <span className="flex h-32 flex-col flex-wrap md:h-40">
               {TOOLS.map((tool) => (
@@ -49,7 +52,7 @@ export default function About() {
               ))}
             </span>
             <br />
-            When I'm not behind the keyboard coding away I like to play board
+            When I'm not at school I like to play board
             games, volleyball, racquetball, Dungeons and Dragons, and
             PlayStation with my friends. I am a leatherworker as well, making
             fine leather goods such as wallets and belts personalized for my
@@ -75,9 +78,6 @@ export default function About() {
             className="mx-2 rounded-full bg-sky-200 p-3 shadow-lg hover:bg-sky-400 dark:shadow-sky-500/30 lg:mx-0"
             href="/resume.pdf"
             target="_blank"
-          >
-            Take a peek at my resume <ImNewspaper className="mb-1 inline" />
-          </a>
         </div>
       </div>
     </div>
